@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ropas",
+  "info": {
+    "singularName": "ropa",
+    "pluralName": "ropas",
+    "displayName": "Ropa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "imagenes": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "disponible": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "hombres",
+        "mujeres",
+        "teens",
+        "unisex"
+      ]
+    },
+    "Chica": {
+      "type": "boolean"
+    },
+    "Mediana": {
+      "type": "boolean"
+    },
+    "Grande": {
+      "type": "boolean"
+    },
+    "ExtraGrande": {
+      "type": "boolean"
+    }
+  }
+}
